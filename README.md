@@ -57,4 +57,5 @@
 4. Имена входного и выходного файла задаются в качестве аргументов командной строки. Кодировка файлов: UTF-8.  
 
 `Monday's child is fair of face.`
+
 `Tuesday's child is full of grace.`
