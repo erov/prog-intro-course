@@ -1,4 +1,0 @@
-Hello world! It's a program that can help me to find substrings in text like this " h e l l o k";
-ChEcK
-
-and one more case: Hello, hello, h ell o.
