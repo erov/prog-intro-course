@@ -1,7 +1,7 @@
 # ITMO-prog-intro-course
-my homeworks for prog-intro-2020 course 
 
 ## Домашнее задание 1. Запусти меня!
+---
 1. Установите [JDK 11+](https://adoptopenjdk.net/?variant=openjdk14&jvmVariant=hotspot)  
 2. Скопируйте один из вариантов `HelloWorld`, рассмотренных на лекции.  
 3. Откомпилируйте `HelloWorld.java` и получите `HelloWorld.class`.  
@@ -9,6 +9,7 @@ my homeworks for prog-intro-2020 course
 5. Создайте скрипт, компилирующий и запускающий `HelloWorld` из командной строки.  
 
 ## Домашнее задание 2. Сумма чисел
+---
 1. Разработайте класс `Sum`, который при запуске из командной строки будет складывать переданные в качестве аргументов целые числа и выводить их сумму на консоль.  
 2. Примеры запуска программы:  
     `java Sum 1 2 3`  
@@ -36,3 +37,5 @@ my homeworks for prog-intro-2020 course
     * Класс должен иметь имя `SumBigIntegerSpace`
     * Числа разделяются [пробелами-разделителями](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#SPACE_SEPARATOR)
     * [Откомпилированные тесты](/hw02-Sum/SumBigIntegerSpaceTest.jar)
+
+
