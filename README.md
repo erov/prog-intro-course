@@ -18,7 +18,7 @@ my homeworks for prog-intro-2020 course
     `java Sum "1 2 3"`  
         Результат: 6  
     `java Sum "1 2" " 3"`  
-        > Результат: 6  
+    > Результат: 6  
     `java Sum " "`  
         Результат: 0  
   
