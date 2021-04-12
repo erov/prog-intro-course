@@ -50,3 +50,11 @@
     * Класс должен иметь имя `ReverseAvg`
     * [Откомпилированные тесты](/hw03-Reverse/ReverseAvgTest.jar)
 
+##Домашнее задание 4. Статистика слов
+1. Разработайте класс `WordStat`, который будет подсчитывать статистику встречаемости слов во входном файле.  
+2. Словом называется непрерывная последовательность букв, апострофов и тире (Unicode category [Punctuation](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DASH_PUNCTUATION), [Dash](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DASH_PUNCTUATION). Для подсчета статистики, слова приводятся к нижнему регистру.  
+3. Выходной файл должен содержать все различные слова, встречающиеся во входном файле, в порядке их появления. Для каждого слова должна быть выведена одна строка, содержащая слово и число его вхождений во входной файл.  
+4. Имена входного и выходного файла задаются в качестве аргументов командной строки. Кодировка файлов: UTF-8.  
+
+`Monday's child is fair of face.
+Tuesday's child is full of grace.`
