@@ -1,13 +1,15 @@
 # ITMO-prog-intro-course
 
 ## Домашнее задание 1. Запусти меня!
+
+> Solution: [HelloWorld.java](hw01-HelloWorld/HelloWorld.java)
+>           [HelloWorldBat.bat](https://github.com/iamerove/ITMO-prog-intro-course/blob/main/hw01-HelloWorld/HelloWorldBat.bat)
+
 1. Установите [JDK 11+](https://adoptopenjdk.net/?variant=openjdk14&jvmVariant=hotspot)  
 2. Скопируйте один из вариантов `HelloWorld`, рассмотренных на лекции.  
 3. Откомпилируйте `HelloWorld.java` и получите `HelloWorld.class`.  
 4. Запустите `HelloWorld` и проверьте его работоспособность.  
 5. Создайте скрипт, компилирующий и запускающий `HelloWorld` из командной строки.  
-
-> Solution: [HelloWorld.java](hw01-HelloWorld/HelloWorld.java)
 
 ## Домашнее задание 2. Сумма чисел
 1. Разработайте класс `Sum`, который при запуске из командной строки будет складывать переданные в качестве аргументов целые числа и выводить их сумму на консоль.  
