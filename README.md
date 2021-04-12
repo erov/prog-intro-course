@@ -1,6 +1,6 @@
 # ITMO-prog-intro-course
 
-## Домашнее задание 1. Запусти меня!
+## [Домашнее задание 1. Запусти меня!](hw01-HelloWorld/HelloWorld.java)
 1. Установите [JDK 11+](https://adoptopenjdk.net/?variant=openjdk14&jvmVariant=hotspot)  
 2. Скопируйте один из вариантов `HelloWorld`, рассмотренных на лекции.  
 3. Откомпилируйте `HelloWorld.java` и получите `HelloWorld.class`.  
