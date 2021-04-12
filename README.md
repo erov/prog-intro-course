@@ -236,3 +236,34 @@ new Multiply(new Const(2), new Variable("x"))
       [TripleExpression](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/TripleExpression.java)
     * [Исходный код тестов](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/DoubleTripleExpressionTest.java)
 
+## Домашнее задание 11. Разбор выражений
+1. Доработайте предыдущее домашнее задание, так что бы выражение строилось по записи вида `x * (x - 2)*x + 1`  
+2. В записи выражения могут встречаться: умножение `*`, деление `/`, сложение `+`, вычитание `-`, унарный минус `-`, целочисленные константы (в десятичной системе счисления, которые помещаются в 32-битный знаковый целочисленный тип), круглые скобки, переменные (x) и произвольное число пробельных символов в любом месте (но не внутри констант).  
+3. Приоритет операторов, начиная с наивысшего
+    * унарный минус;
+    * умножение и деление;
+    * сложение и вычитание.
+4. Разбор выражений рекомендуется производить [методом рекурсивного спуска](https://ru.wikibooks.org/wiki/Реализации_алгоритмов/Метод_рекурсивного_спуска). Алгоритм должен работать за линейное время.
+
+Модификации
+ * *Базовая*
+    * Класс `ExpressionParser` должен реализовывать интерфейс
+        [Parser](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/parser/Parser.java)
+    * Результат разбора должен реализовывать интерфейс
+        [TripleExpression](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/TripleExpression.java)
+    * [Исходный код тестов](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/parser/ParserTest.java)
+ * *Bitwise* (32-35)
+    * Дополнительно реализуйте бинарные операции:
+        * `&` – побитное И, приоритет меньше чем у `+` (`6 & 1 + 2` равно `6 & (1 + 2)` равно 2);
+        * `^` – побитный XOR, приоритет меньше чем у `&` (`6 ^ 1 + 2` равно `6 ^ (1 + 2)` равно 5);
+        * `|` – побитное ИЛИ, приоритет меньше чем у `^` (`6 | 1 + 2` равно `6 | (1 + 2)` равно 7);
+    * [Исходный код тестов](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/parser/ParserBitwiseTest.java)
+ * *FlipLow* (38, 39)
+    * Реализуйте операции из модификации *Bitwise*.
+    * Дополнительно реализуйте унарные операции (приоритет как у унарного минуса):
+        * `flip` – число с переставленными двоичными цифрами, `flip 12345` равно 9987, 
+                   `flip -12345` равно `-470548481`;
+        * `low` – минимальный установленный бит
+                 (как в [lowestOneBit](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#lowestOneBit%28int%29)),
+                 `low 123456` равно 64.
+    * [Исходный код тестов](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/parser/ParserFlipLowTest.java)
