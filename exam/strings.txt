@@ -1,0 +1,1 @@
+hello|Hello|--ignore-case HEllo| h e l l o |--ignore-case wORLd|--ignore-case k|ChEcK|lol
