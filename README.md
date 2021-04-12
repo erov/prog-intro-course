@@ -44,12 +44,6 @@
 5. Для чтения чисел используйте класс [Scanner](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html).  
 6. Примеры работы программы:  
 
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
-|-------|-------|  
 |Ввод   |Вывод  |  
 |-------|-------|  
 |1 2    |3      |  
@@ -64,5 +58,4 @@ Markdown | Less | Pretty
 |-------|-------|  
 |1     2|4 3    |  
 |3     4|2 1    |  
-|-------|-------|  
 
