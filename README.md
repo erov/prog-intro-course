@@ -245,7 +245,7 @@ new Multiply(new Const(2), new Variable("x"))
     * сложение и вычитание.
 4. Разбор выражений рекомендуется производить [методом рекурсивного спуска](https://ru.wikibooks.org/wiki/Реализации_алгоритмов/Метод_рекурсивного_спуска). Алгоритм должен работать за линейное время.
 
-Модификации
+Модификации:
  * *Базовая*
     * Класс `ExpressionParser` должен реализовывать интерфейс
         [Parser](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/parser/Parser.java)
@@ -267,3 +267,49 @@ new Multiply(new Const(2), new Variable("x"))
                  (как в [lowestOneBit](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#lowestOneBit%28int%29)),
                  `low 123456` равно 64.
     * [Исходный код тестов](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/parser/ParserFlipLowTest.java)
+
+## Домашнее задание 12. Обработка ошибок
+1. Добавьте в программу вычисляющую выражения обработку ошибок, в том числе:
+    * ошибки разбора выражений;
+    * ошибки вычисления выражений.
+2. Для выражения 1000000*x*x*x*x*x/(x-1) вывод программы должен иметь следующий вид:
+```
+x       f
+0       0
+1       division by zero
+2       32000000
+3       121500000
+4       341333333
+5       overflow
+6       overflow
+7       overflow
+8       overflow
+9       overflow
+10      overflow
+```
+Результат `division by zero (overflow)` означает, что в процессе вычисления произошло деление на ноль (переполнение).
+3. При выполнении задания следует обратить внимание на дизайн и обработку исключений.
+4. Человеко-читаемые сообщения об ошибках должны выводится на консоль.
+5. Программа не должна «вылетать» с исключениями (как стандартными, так и добавленными).
+
+Модификации
+ * *Базовая*
+    * Класс `ExpressionParser` должен реализовывать интерфейс
+        [Parser](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/exceptions/Parser.java)
+    * Классы `CheckedAdd`, `CheckedSubtract`, `CheckedMultiply`,
+        `CheckedDivide` и `CheckedNegate` должны реализовывать интерфейс
+        [TripleExpression](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/TripleExpression.java)
+    * Нельзя использовать типы `long` и `double`
+    * Нельзя использовать методы классов `Math` и `StrictMath`
+    * [Исходный код тестов](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/exceptions/ExceptionsTest.java)
+ * *AbsSqrt* (32-35)
+    * Дополнительно реализуйте унарные операции:
+        * `abs` – модуль числа, `abs -5` равно 5;
+        * `sqrt` – квадратный корень, `sqrt 24` равно 4.
+    * [Исходный код тестов](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/exceptions/ExceptionsAbsSqrtTest.java)
+ * *GcdLcm* (38, 39)
+    * Реализуйте операции модификации *AbsSqrt*.
+    * Дополнительно реализуйте бинарные операции (минимальный приоритет):
+        * `gcd` – НОД, `2 gcd -3` равно 1;
+        * `lcm` – НОК, `2 lcm -3` равно -6.
+    * [Исходный код тестов](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/exceptions/ExceptionsGcdLcmTest.java)
