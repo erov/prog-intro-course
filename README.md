@@ -94,7 +94,7 @@
 6. Для реализации программы используйте Collections Framework.  
 7. _Сложный вариант_. Реализуйте и примените класс IntList, компактно хранящий список целых чисел.  
 
-Откомпилированные тесты: [WordStatIndexTest.jar](/hw06-WordStat%2B%2B/WordStatIndexTest.jar)
+Откомпилированные тесты: [WordStatIndexTest.jar](/hw06-WordStat++/WordStatIndexTest.jar)
 
 Модификация:
  * *CountFirstIndex*
