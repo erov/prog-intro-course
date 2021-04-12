@@ -2,8 +2,9 @@
 
 ## Домашнее задание 1. Запусти меня!
 
-> Solution: [HelloWorld.java](hw01-HelloWorld/HelloWorld.java)
->           [HelloWorldBat.bat](https://github.com/iamerove/ITMO-prog-intro-course/blob/main/hw01-HelloWorld/HelloWorldBat.bat)
+> Solution: 
+> * [HelloWorld.java](hw01-HelloWorld/HelloWorld.java)
+> * [HelloWorldBat.bat](https://github.com/iamerove/ITMO-prog-intro-course/blob/main/hw01-HelloWorld/HelloWorldBat.bat)
 
 1. Установите [JDK 11+](https://adoptopenjdk.net/?variant=openjdk14&jvmVariant=hotspot)  
 2. Скопируйте один из вариантов `HelloWorld`, рассмотренных на лекции.  
