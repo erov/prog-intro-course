@@ -1,0 +1,5 @@
+.idea/
+*.iml
+out/
+strings.txt
+text.txt
