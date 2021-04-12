@@ -169,8 +169,8 @@
     * Предотвратите жульничество: у игрока не должно быть возможности достать *Board* из *Position*.
 
 ## Домашнее задание 10. Выражения
-1. Разработайте классы `Const`, `Variable`, `Add`, `Subtract`, `Multiply`, `Divide` для вычисления выражений с одной переменной в типе `int`.
-2. Классы должны позволять составлять выражения вида
+1. Разработайте классы `Const`, `Variable`, `Add`, `Subtract`, `Multiply`, `Divide` для вычисления выражений с одной переменной в типе `int`.  
+2. Классы должны позволять составлять выражения вида  
 ```
 new Subtract(
     new Multiply(
@@ -180,8 +180,8 @@ new Subtract(
     new Const(3)
 ).evaluate(5)
 ```
-При вычислении такого выражения вместо каждой переменной подставляется значение, переданное в качестве параметра методу `evaluate` (на данном этапе имена переменных игнорируются). Таким образом, результатом вычисления приведенного примера должно стать число 7.
-3. Метод `toString` должен выдавать запись выражения в полноскобочной форме. Например
+При вычислении такого выражения вместо каждой переменной подставляется значение, переданное в качестве параметра методу `evaluate` (на данном этапе имена переменных игнорируются). Таким образом, результатом вычисления приведенного примера должно стать число 7.  
+3. Метод `toString` должен выдавать запись выражения в полноскобочной форме. Например  
 ```
 new Subtract(
     new Multiply(
@@ -191,8 +191,8 @@ new Subtract(
     new Const(3)
 ).toString()
 ```            
-должен выдавать ((2 * x) - 3).
-4. _Сложный вариант_. Метод `toMiniString` должен выдавать выражение с минимальным числом скобок. Например
+должен выдавать ((2 * x) - 3).  
+4. _Сложный вариант_. Метод `toMiniString` должен выдавать выражение с минимальным числом скобок. Например  
 ```
 new Subtract(
     new Multiply(
@@ -202,19 +202,37 @@ new Subtract(
     new Const(3)
 ).toMiniString()
 ```
-должен выдавать 2 * x - 3.
-5. Реализуйте метод `equals`, проверяющий, что два выражения совпадают. Например,
+должен выдавать 2 * x - 3.  
+5. Реализуйте метод `equals`, проверяющий, что два выражения совпадают. Например,  
 ```
 new Multiply(new Const(2), new Variable("x"))
     .equals(new Multiply(new Const(2), new Variable("x")))
 ```            
-должно выдавать true, а
+должно выдавать true, а  
 ```
 new Multiply(new Const(2), new Variable("x"))
     .equals(new Multiply(new Variable("x"), new Const(2)))
 ```            
-должно выдавать false.
-6. Для тестирования программы должен быть создан класс `Main`, который вычисляет значение выражения x^2−2x+1, для x, заданного в командной строке.
-7. При выполнении задания следует обратить внимание на:
+должно выдавать false.  
+6. Для тестирования программы должен быть создан класс `Main`, который вычисляет значение выражения x^2−2x+1, для x, заданного в командной строке.  
+7. При выполнении задания следует обратить внимание на:  
     * Выделение общего интерфейса создаваемых классов.
     * Выделение абстрактного базового класса для бинарных операций.
+
+Модификации:
+ * *Базовая*
+    * Реализуйте интерфейс [Expression](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/Expression.java)
+    * [Исходный код тестов](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/ExpressionTest.java)
+        * Запускать c аргументом `easy` или `hard`
+ * *Triple* (32-35)
+    * Дополнительно реализуйте интерфейс [TripleExpression](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/TripleExpression.java)
+    * [Исходный код тестов](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/TripleExpressionTest.java)
+ * *Double* (36, 37)
+    * Дополнительно реализуйте интерфейс [DoubleExpression](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/DoubleExpression.java)
+    * [Исходный код тестов](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/DoubleExpressionTest.java)
+ * *DoubleTriple* (38, 39)
+    * Дополнительно реализуйте интерфейсы 
+      [DoubleExpression](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/DoubleExpression.java) и
+      [TripleExpression](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/TripleExpression.java)
+    * [Исходный код тестов](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/DoubleTripleExpressionTest.java)
+
