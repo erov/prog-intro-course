@@ -35,4 +35,4 @@ my homeworks for prog-intro-2020 course
     * Входные данные помещаются в тип [BigInteger](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html)
     * Класс должен иметь имя `SumBigIntegerSpace`
     * Числа разделяются [пробелами-разделителями](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#SPACE_SEPARATOR)
-    * [Откомпилированные тесты](/blob/main/hw02-Sum/SumBigIntegerSpaceTest.jar)
+    * [Откомпилированные тесты](/hw02-Sum/SumBigIntegerSpaceTest.jar)
