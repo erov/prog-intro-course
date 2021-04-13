@@ -53,6 +53,10 @@
 4. Вход содержит не более 10^6 чисел и строк.  
 5. Для чтения чисел используйте класс [Scanner](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html).  
 
+a | b
+-- | --
+-- | --
+
 Откомпилированные тесты: [ReverseTest.jar](/hw03-Reverse/ReverseTest.jar)  
 Модификация:
  * *Avg* (для 36-39)
