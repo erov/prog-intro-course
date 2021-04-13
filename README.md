@@ -28,9 +28,9 @@
     | `java Sum " "` | 0 | 
   
     Аргументы могут содержать:  
-        * цифры;  
-        * знаки + и -;  
-        * произвольные [пробельные символы](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isWhitespace(char)).  
+    * цифры;  
+    * знаки + и -;  
+    * произвольные [пробельные символы](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isWhitespace(char)).  
 3. При выполнении задания можно считать, что для представления входных данных и промежуточных результатов достаточен тип int.  
 4. Перед выполнением задания ознакомьтесь с документацией к классам [String](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html) и [Integer](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html).  
 5. Для отладочного вывода используйте [System.err](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#err), тогда он будет игнорироваться проверяющей программой.  
