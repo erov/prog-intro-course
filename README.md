@@ -1,5 +1,7 @@
 # ITMO-prog-intro-course
 
+Модификации реализованы для групп 38-39, в заданиях с разделением на легкую/сложную версию реализованна сложная версия.  
+
 ## Домашнее задание 1. Запусти меня!
 
 > Реализация: [HelloWorld.java](hw01-HelloWorld/HelloWorld.java), [HelloWorldBat.bat](https://github.com/iamerove/ITMO-prog-intro-course/blob/main/hw01-HelloWorld/HelloWorldBat.bat)
