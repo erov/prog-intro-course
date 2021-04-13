@@ -2,9 +2,7 @@
 
 ## Домашнее задание 1. Запусти меня!
 
-> Solution: 
-> * [HelloWorld.java](hw01-HelloWorld/HelloWorld.java)
-> * [HelloWorldBat.bat](https://github.com/iamerove/ITMO-prog-intro-course/blob/main/hw01-HelloWorld/HelloWorldBat.bat)
+> Реализация: [HelloWorld.java](hw01-HelloWorld/HelloWorld.java), [HelloWorldBat.bat](https://github.com/iamerove/ITMO-prog-intro-course/blob/main/hw01-HelloWorld/HelloWorldBat.bat)
 
 1. Установите [JDK 11+](https://adoptopenjdk.net/?variant=openjdk14&jvmVariant=hotspot)  
 2. Скопируйте один из вариантов `HelloWorld`, рассмотренных на лекции.  
@@ -14,7 +12,7 @@
 
 ## Домашнее задание 2. Сумма чисел
 
-> Solution: [SumBigIntegerSpace.java](/hw02-Sum/SumBigIntegerSpace.java)
+> Реализация: [SumBigIntegerSpace.java](/hw02-Sum/SumBigIntegerSpace.java)
 
 1. Разработайте класс `Sum`, который при запуске из командной строки будет складывать переданные в качестве аргументов целые числа и выводить их сумму на консоль.  
 2. Примеры запуска программы:  
@@ -47,7 +45,7 @@
 
 ## Домашнее задание 3. Реверс  
 
-> Solution: [ReverseAvg.java](/hw03-Reverse/ReverseAvg.java)
+> Реализация: [ReverseAvg.java](/hw03-Reverse/ReverseAvg.java)
 
 1. Разработайте класс `Reverse`, читающий числа из [стандартного ввода](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#in), и выводящий их на [стандартный вывод](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#out) в обратном порядке.  
 2. В каждой строке входа содержится некоторое количество целых чисел (может быть 0). Числа разделены пробелами. Каждое число помещается в тип int.  
@@ -64,6 +62,9 @@
     * [Откомпилированные тесты](/hw03-Reverse/ReverseAvgTest.jar)
 
 ## Домашнее задание 4. Статистика слов
+
+> Реализация: [WordStatCountShingles.java](/hw04-WordStat/WordStatCountShingles.java)
+
 1. Разработайте класс `WordStat`, который будет подсчитывать статистику встречаемости слов во входном файле.  
 2. Словом называется непрерывная последовательность букв, апострофов и тире (Unicode category [Punctuation](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DASH_PUNCTUATION), [Dash](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DASH_PUNCTUATION). Для подсчета статистики, слова приводятся к нижнему регистру.  
 3. Выходной файл должен содержать все различные слова, встречающиеся во входном файле, в порядке их появления. Для каждого слова должна быть выведена одна строка, содержащая слово и число его вхождений во входной файл.  
@@ -80,6 +81,9 @@
     * [Откомпилированные тесты](/hw04-WordStat/WordStatCountShinglesTest.jar)
 
 ## Домашнее задание 5. Свой сканер
+
+> Реализация: [MyScanner.java](/hw05-Scanner/MyScanner.java)
+
 1. Реализуйте свой аналог класса `Scanner` на основе `Reader`.  
 2. Примените разработанный `Scanner` для решения задания «Реверс».  
 3. Примените разработанный `Scanner` для решения задания «Статистика слов».  
@@ -97,6 +101,9 @@
     * [Откомпилированные тесты](/hw05-Scanner/FastReverseHexAbcTest.jar)
 
 ## Домашнее задание 6. Статистика слов++
+
+> Реализация: [WordStatCountFirstIndex.java](/hw06-WordStat%2B%2B/WordStatCountFirstIndex.java)
+
 1. Разработайте класс `WordStatIndex`, который будет подсчитывать статистику встречаемости слов во входном файле.  
 2. Словом называется непрерывная последовательность букв, апострофов и тире (Unicode category Punctuation, Dash). Для подсчета статистики, слова приводятся к нижнему регистру.  
 3.Выходной файл должен содержать все различные слова, встречающиеся во входном файле, в порядке их появления. Для каждого слова должна быть выведена одна строка, содержащая слово, число его вхождений во входной файл и номера вхождений этого слова среди всех слов во входном файле.  
@@ -116,6 +123,9 @@
     * [Откомпилированные тесты](/hw06-WordStat%2B%2B/WordStatCountFirstIndexTest.jar)
 
 ## Домашнее задание 7. Разметка
+
+> Реализация: [markup/](/hw07-Markup/src/markup)
+
 1. Разработайте набор классов для текстовой разметки.
 2. Класс `Paragraph` может содержать произвольное число других элементов разметки и текстовых элементов.
 3. Класс `Text` – текстовый элемент.
@@ -165,6 +175,10 @@
     * [Исходный код тестов](hw07-Markup/src/markup/BBCodeListTest.java)
 
 ## Домашнее задание 8. Чемпионат
+
+
+> Реализация: [championship/](hw08-Championship/src)
+
 1. Решите как можно больше задач Чемпионата северо-запада России по программированию 2019.  
 2. Материалы соревнования:
     * [Условия задач](https://nerc.itmo.ru/archive/2019/northern/nwrrc-2019-statements.pdf)
@@ -172,6 +186,9 @@
 3. Рекомендуемое время выполнения задания: 3 часа  
 
 ## Домашнее задание 9. Игра m,n,k
+
+> Реализация: [Main.java](/hw09-MNK-Game/src/game/Main.java)
+
 1. Реализуйте [игру m,n,k](https://en.wikipedia.org/wiki/M,n,k-game).
 2. Добавьте обработку ошибок ввода пользователя.
 3. _Простая версия_. Проверку выигрыша можно производить за O(nmk).
@@ -180,6 +197,9 @@
     * Предотвратите жульничество: у игрока не должно быть возможности достать *Board* из *Position*.
 
 ## Домашнее задание 10. Выражения
+
+> Реализация: [expression/](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression)
+
 1. Разработайте классы `Const`, `Variable`, `Add`, `Subtract`, `Multiply`, `Divide` для вычисления выражений с одной переменной в типе `int`.  
 2. Классы должны позволять составлять выражения вида  
 ```
@@ -248,6 +268,9 @@ new Multiply(new Const(2), new Variable("x"))
     * [Исходный код тестов](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/DoubleTripleExpressionTest.java)
 
 ## Домашнее задание 11. Разбор выражений
+
+> Реализация: [expression/parser/](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/parser)
+
 1. Доработайте предыдущее домашнее задание, так что бы выражение строилось по записи вида `x * (x - 2)*x + 1`  
 2. В записи выражения могут встречаться: умножение `*`, деление `/`, сложение `+`, вычитание `-`, унарный минус `-`, целочисленные константы (в десятичной системе счисления, которые помещаются в 32-битный знаковый целочисленный тип), круглые скобки, переменные (x) и произвольное число пробельных символов в любом месте (но не внутри констант).  
 3. Приоритет операторов, начиная с наивысшего
@@ -280,6 +303,9 @@ new Multiply(new Const(2), new Variable("x"))
     * [Исходный код тестов](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/parser/ParserFlipLowTest.java)
 
 ## Домашнее задание 12. Обработка ошибок
+
+> Реализация: [expression/exceptions/](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/exceptions)
+
 1. Добавьте в программу вычисляющую выражения обработку ошибок, в том числе:
     * ошибки разбора выражений;
     * ошибки вычисления выражений.
@@ -326,6 +352,9 @@ x       f
     * [Исходный код тестов](/hw10%2B11%2B12-Expression%2BParser%2BExceptions/src/expression/exceptions/ExceptionsGcdLcmTest.java)
 
 ## Экзамен (Grep)
+
+> Реализация: [Main.java](/exam/src/Main.java)
+
 Напишите аналог утилиты `grep`.
 * Поддерживаемые возможности:
     * Поиск нескольких подстрок, разделенных `|`
