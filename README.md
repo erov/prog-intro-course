@@ -55,45 +55,45 @@
 6. Примеры работы программы:  
 Ввод:
 ```
-1 2
-3
+    1 2
+    3
 ```
 Вывод:
 ```
-3
-2 1
+    3
+    2 1
 ```
 Ввод:
 ```
-3
-2 1
+    3
+    2 1
 ```
 Вывод:
 ```
-1 2
-3
+    1 2
+    3
 ```
 Ввод:
 ```
-1
+    1
 
-2 -3
+    2 -3
 ```
 Вывод:
 ```
--3 2
+    -3 2
 
-1
+    1
 ```
 Ввод:
 ```
-1     2
-3     4
+    1     2
+    3     4
 ```
 Вывод:
 ```
-4 3
-2 1
+    4 3
+    2 1
 ```
 
 Откомпилированные тесты: [ReverseTest.jar](/hw03-Reverse/ReverseTest.jar)  
@@ -116,52 +116,52 @@
 
 Ввод:
 ```
-To be, or not to be, that is the question:
+    To be, or not to be, that is the question:
 ```
 Вывод:
 ```
-to 2
-be 2
-or 1
-not 1
-that 1
-is 1
-the 1
-question 1
+    to 2
+    be 2
+    or 1
+    not 1
+    that 1
+    is 1
+    the 1
+    question 1
 ```
 Ввод:
 ```
-Monday's child is fair of face.
-Tuesday's child is full of grace.
+    Monday's child is fair of face.
+    Tuesday's child is full of grace.
 ```
 Вывод:
 ```
-monday's 1
-child 2
-is 2
-fair 1
-of 2
-face 1
-tuesday's 1
-full 1
-grace 1
+    monday's 1
+    child 2
+    is 2
+    fair 1
+    of 2
+    face 1
+    tuesday's 1
+    full 1
+    grace 1
 ```
 Ввод:
 ```
-Шалтай-Болтай
-Сидел на стене.
-Шалтай-Болтай
-Свалился во сне.
+    Шалтай-Болтай
+    Сидел на стене.
+    Шалтай-Болтай
+    Свалился во сне.
 ```
 Вывод:
 ```
-шалтай-болтай 2
-сидел 1
-на 1
-стене 1
-свалился 1
-во 1
-сне 1
+    шалтай-болтай 2
+    сидел 1
+    на 1
+    стене 1
+    свалился 1
+    во 1
+    сне 1
 ```
 
 Откомпилированные тесты: [WordStatInputTest.jar](/hw04-WordStat/WordStatInputTest.jar)  
