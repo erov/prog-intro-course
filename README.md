@@ -35,7 +35,7 @@
 4. Перед выполнением задания ознакомьтесь с документацией к классам [String](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html) и [Integer](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html).  
 5. Для отладочного вывода используйте [System.err](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#err), тогда он будет игнорироваться проверяющей программой.  
 
-Откомпилированные тесты: [SumTest.jar](/hw02-Sum/SumTest.jar)
+Откомпилированные тесты: [SumTest.jar](/hw02-Sum/SumTest.jar)  
 Модификация:
  * *BigIntegerSpace* (для 38, 39)
     * Входные данные помещаются в тип [BigInteger](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html)
